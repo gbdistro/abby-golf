@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply text-blue-700 dark:text-blue-400 underline underline-offset-2;
+  }
+  .link:hover {
+    @apply text-blue-500 dark:text-blue-200 no-underline;
+  }
+  .locations_map {
+    max-height: calc(theme("height.screen") - 64px);
+  }
+}

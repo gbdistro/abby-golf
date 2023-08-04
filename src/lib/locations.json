@@ -1,0 +1,98 @@
+[
+  {
+    "name": "The TRAXX",
+    "position": { "lat": 34.63794869984041, "lng": -92.53203713080867 },
+    "address": "6401 Boone Rd, Bryant, AR, 72002",
+    "type": "park"
+  },
+  {
+    "name": "Lower Lake Degray Disc Golf",
+    "position": { "lat": 34.24214090022923, "lng": -93.06953938558769 },
+    "address": "287 Lower Dam Pike, Caddo Valley, AR 71923",
+    "type": "park"
+  },
+  {
+    "name": "Wild Cat",
+    "position": { "lat": 34.53892590956888, "lng": -93.08747236005684 },
+    "address": "461 Wildcat Road, Hot Springs National Park, AR 71913",
+    "type": "park"
+  },
+  {
+    "name": "Hindman Eighteens",
+    "position": { "lat": 34.693881496786545, "lng": -92.36458718333911 },
+    "address": "60 Brookview Drive, Little Rock, AR, 72209",
+    "type": "park"
+  },
+  {
+    "name": "Burns Park",
+    "position": { "lat": 34.801279357534106, "lng": -92.3051832306871 },
+    "address": "22 Funland Dr, North Little Rock, 72118",
+    "type": "park"
+  },
+  {
+    "name": "Stone Links",
+    "position": { "lat": 34.74504115363032, "lng": -92.12653204232824 },
+    "address": "12601 Faulkner Lake Rd, North Little Rock, AR, 72117",
+    "type": "park"
+  },
+  {
+    "name": "Pine Valley",
+    "position": { "lat": 34.91232455117328, "lng": -92.21228100185121 },
+    "address": "9311 Old Tom Box Rd, Sherwood, AR 72120",
+    "type": "park"
+  },
+  {
+    "name": "Pleasant View",
+    "position": { "lat": 35.32306963556356, "lng": -93.1462707 },
+    "address": "4158 Pleasant View Rd, Russellville, AR 72802",
+    "type": "park"
+  },
+  {
+    "name": "Fellowship Creek",
+    "position": { "lat": 35.298952039261145, "lng": -93.12114238465644 },
+    "address": "1680 Sparksford Dr, Russellville, AR 72802",
+    "type": "park"
+  },
+  {
+    "name": "Kerr Station",
+    "position": { "lat": 34.95421833676598, "lng": -92.01971580053741 },
+    "address": "1749-1907 Kerr Station Rd, Cabot, AR 72023",
+    "type": "park"
+  },
+  {
+    "name": "Abby Road University",
+    "position": { "lat": 34.73889731200156, "lng": -92.34197102973047 },
+    "address": "1400 S University Ave J, Little Rock, AR 72204",
+    "type": "store"
+  },
+  {
+    "name": "Abby Road Conway",
+    "position": { "lat": 35.110389322741995, "lng": -92.42835939089824 },
+    "address": "201 Skyline Dr Suite 3, Conway, AR 72032",
+    "type": "store"
+  },
+  {
+    "name": "Abby Road Albert Pike",
+    "position": { "lat": 34.495478955799555, "lng": -93.07610731608554 },
+    "address": "623 Albert Pike Rd, Hot Springs, AR 71913",
+    "type": "store"
+  },
+  {
+    "name": "Abby Road Otter Creek",
+    "position": { "lat": 34.65672750263045, "lng": -92.42679890133392 },
+    "address": "10400 Stagecoach Rd, Little Rock, AR 72210",
+    "type": "store"
+  },
+  {
+    "name": "Abby Road Benton Military Rd",
+    "position": { "lat": 34.574431578964635, "lng": -92.57822358096081 },
+    "address": "1205 Military Rd #3 Suite C, Benton, AR 72015",
+    "type": "store"
+  },
+  {
+    "name": "Abby Road Texarkana",
+    "position": { "lat": 33.46111546617134, "lng": -94.03023398328624 },
+    "address": "1103 Arkansas Blvd, Texarkana, AR 71854",
+    "type": "store"
+  }
+]
