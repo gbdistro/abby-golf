@@ -6,7 +6,7 @@ import List from "@/components/LocationsList";
 import LocationsMap from "@/components/Map";
 
 function HomePage() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row md:locations_map">
