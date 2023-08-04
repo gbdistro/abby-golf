@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import locations from "@/lib/locations.json";
-import SvgComponent from "@/components/locations/disc_golf_goal";
+import SvgComponent from "@/components/disc_golf_goal";
 
 export default function List({ isSidebarOpen }) {
   return (

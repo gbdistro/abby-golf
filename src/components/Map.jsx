@@ -12,6 +12,7 @@ import {
 import locations from "@/lib/locations.json";
 import { mapConfig } from "@/lib/mapConfig";
 
+import Controls from "./Controls";
 import LocationReviews from "@/components/locations/LocationReviews";
 import LocationImageGallery from "@/components/locations/LocationImageGallery";
 
@@ -28,6 +29,7 @@ function LocationsMap({ isSidebarOpen, setIsSidebarOpen }) {
   const [showLabels, setShowLabels] = useState(true);
   const [zoom, setZoom] = useState(8.1);
   const [iconScale, setIconScale] = useState(50);
+  const [fontSize, setFontSize] = useState(9);
 
   const onLoad = useCallback(function callback(map) {
     setMap(map);
@@ -50,57 +52,30 @@ function LocationsMap({ isSidebarOpen, setIsSidebarOpen }) {
     }
   };
 
+  const handleSetZoom = (value) => {
+    setZoom(value);
+  };
+  const handleSetIconScale = (value) => {
+    setIconScale(value);
+  };
+  const handleSetFontSize = (value) => {
+    setFontSize(value);
+  };
+
   return isLoaded ? (
     <div className="flex flex-col w-full">
-      {/* Controls */}
-      <div className="flex gap-10 bg-slate-700 p-4">
-        <button
-          onClick={() => setIsSidebarOpen((prev) => !prev)}
-          className="hidden md:block outline outline-1 outline-slate-400 rounded-md py-1 px-2"
-        >
-          {isSidebarOpen ? "Hide Sidebar" : "Show Sidebar"}
-        </button>
-        <button
-          onClick={() => setShowLabels((prev) => !prev)}
-          className="outline outline-1 outline-slate-400 rounded-md py-1 px-2"
-        >
-          {showLabels ? "Hide Labels" : "Show Labels"}
-        </button>
-        <div className="flex flex-col gap-1 text-center">
-          <p>Zoom</p>
-          <div className="flex gap-2">
-            <button
-              onClick={() => setZoom((prev) => prev + 0.1)}
-              className="outline outline-1 outline-slate-300 w-full"
-            >
-              +
-            </button>
-            <button
-              onClick={() => setZoom((prev) => prev - 0.1)}
-              className="outline outline-1 outline-slate-300 w-full"
-            >
-              -
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col gap-1 text-center">
-          <p>Icon Size</p>
-          <div className="flex gap-2">
-            <button
-              onClick={() => setIconScale((prev) => prev + 1)}
-              className="outline outline-1 outline-slate-300 w-full"
-            >
-              +
-            </button>
-            <button
-              onClick={() => setIconScale((prev) => prev - 1)}
-              className="outline outline-1 outline-slate-300 w-full"
-            >
-              -
-            </button>
-          </div>
-        </div>
-      </div>
+      <Controls
+        showLabels={showLabels}
+        setShowLabels={setShowLabels}
+        zoom={zoom}
+        setZoom={handleSetZoom}
+        iconScale={iconScale}
+        setIconScale={handleSetIconScale}
+        fontSize={fontSize}
+        setFontSize={handleSetFontSize}
+        isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+      />
 
       <GoogleMap
         center={center}
@@ -127,7 +102,7 @@ function LocationsMap({ isSidebarOpen, setIsSidebarOpen }) {
                 showLabels
                   ? {
                       text: `${loc.name}`,
-                      fontSize: "9pt",
+                      fontSize: `${fontSize}pt`,
                       className:
                         "absolute bottom-0 translate-x-[-50%] text-black bg-neutral-200 p-1",
                     }
